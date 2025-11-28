@@ -2,6 +2,7 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
+    # category = models.CharField(max_length=100) PARA SEPARAR ENTRE TIPO DE PRENDA (camisa, pantalón, ...)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     size = models.CharField(max_length=6)
